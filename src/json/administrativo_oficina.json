@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1,
+    "question": "Tiene una base de datos con 2.000 registros y necesita saber cuántos están diligenciados en la columna \"Radicado\". ¿Qué fórmula debe usar?",
+    "options": [
+      "SUMA",
+      "CONTARA",
+      "PROMEDIO"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 2,
+    "question": "Su jefe solo quiere ver los registros con Estado = \"Abierto\" sin eliminar los demás. ¿Qué herramienta debe usar?",
+    "image": "src/img/P2_Administrativo.jpg",
+    "options": [
+      "Ordenar de la A a la Z",
+      "Buscar y reemplazar",
+      "Filtros (AutoFiltro)"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "id": 3,
+    "question": "Al copiar una fórmula, necesita que siempre se mantenga fija la celda B1. ¿Qué debe hacer?",
+    "options": [
+      "Usar referencia relativa",
+      "Usar referencia absoluta ($B$1)",
+      "Convertir la celda en texto"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 4,
+    "question": "Tiene una tabla con ventas por mes y desea compararlas visualmente. ¿Qué gráfico es más adecuado?",
+    "options": [
+      "Gráfico circular",
+      "Gráfico de columnas",
+      "Gráfico de dispersión"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 5,
+    "question": "¿Para qué sirve la opción \"Congelar fila superior\"?",
+    "image": "src/img/P5_Administrativo.jpg",
+    "options": [
+      "Proteger el archivo",
+      "Mantener visible el encabezado al desplazarse",
+      "Ocultar filas"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 6,
+    "question": "Necesita identificar rápidamente valores altos y bajos en un listado. ¿Qué herramienta le ayuda?",
+    "options": [
+      "Validación de datos",
+      "Formato condicional",
+      "Combinar celdas"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 7,
+    "question": "¿Qué ventaja tiene convertir un rango en una Tabla en Excel?",
+    "options": [
+      "Cambia el tamaño de la hoja",
+      "Facilita el orden y los filtros",
+      "Bloquea los datos"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 8,
+    "question": "Debe crear un glosario alfabético que indique en qué páginas aparecen ciertos términos. ¿Qué herramienta debe usar?",
+    "options": [
+      "Buscar y reemplazar",
+      "Tabla de contenido",
+      "Índice"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "id": 9,
+    "question": "Quiere que un documento tenga el mismo formato en títulos y subtítulos. ¿Qué herramienta es la más adecuada?",
+    "image": "src/img/P9_Administrativo.jpg",
+    "options": [
+      "Negrita manual",
+      "Estilos",
+      "Color de fuente"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 10,
+    "question": "Necesita que un nuevo contenido comience en una hoja diferente. ¿Qué debe insertar?",
+    "options": [
+      "Salto de línea",
+      "Salto de página",
+      "Tabulación"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 11,
+    "question": "¿Para qué se usa el encabezado y pie de página?",
+    "image": "src/img/P11_Administrativo.jpg",
+    "options": [
+      "Insertar imágenes",
+      "Mostrar información repetitiva como fecha o número",
+      "Cambiar márgenes"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 12,
+    "question": "Tiene información organizada en filas y columnas. ¿Qué opción es la más adecuada?",
+    "options": [
+      "Cuadro de texto",
+      "Tabla",
+      "WordArt"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 13,
+    "question": "¿Qué herramienta permite numerar automáticamente las páginas?",
+    "options": [
+      "Referencias",
+      "Número de página",
+      "Comentarios"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 14,
+    "question": "¿Para qué sirve la opción \"Guardar como\"?",
+    "options": [
+      "Imprimir el documento",
+      "Crear una copia con otro nombre o formato",
+      "Proteger el archivo"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 15,
+    "question": "Necesita enviar un correo copiando a varias personas visibles para todos. ¿Qué campo debe usar?",
+    "image": "src/img/P15_Administrativo.jpg",
+    "options": [
+      "CCO",
+      "CC",
+      "Asunto"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 16,
+    "question": "¿Cuándo es recomendable usar CCO?",
+    "options": [
+      "Para responder a todos",
+      "Para ocultar destinatarios",
+      "Para adjuntar archivos"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 17,
+    "question": "¿Qué buena práctica aplica al asunto del correo?",
+    "options": [
+      "Dejarlo vacío",
+      "Ser claro y específico",
+      "Usar solo mayúsculas"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 18,
+    "question": "Antes de enviar un correo formal, ¿qué se debe verificar?",
+    "options": [
+      "El color del fondo",
+      "Destinatarios y archivos adjuntos",
+      "El tipo de letra"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 19,
+    "question": "¿Qué ventaja tiene usar comillas en una búsqueda de Google?",
+    "options": [
+      "Traducir resultados",
+      "Buscar una frase exacta",
+      "Descargar archivos"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 20,
+    "question": "¿Qué indica que una página web tenga \"https\"?",
+    "options": [
+      "Página lenta",
+      "Conexión segura",
+      "Sitio sin información"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 21,
+    "question": "¿Qué es un navegador web?",
+    "options": [
+      "Un antivirus",
+      "Un programa para acceder a internet",
+      "Un archivo"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 22,
+    "question": "¿Qué práctica ayuda a proteger la información?",
+    "options": [
+      "Usar la misma contraseña",
+      "No abrir enlaces sospechosos",
+      "Compartir contraseñas"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 23,
+    "question": "¿Para qué se utiliza PowerPoint en un entorno administrativo?",
+    "options": [
+      "Editar textos largos",
+      "Presentar información de forma visual",
+      "Gestionar correos"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 24,
+    "question": "¿Qué es una diapositiva?",
+    "image": "src/img/P24_Administrativo.jpg",
+    "options": [
+      "Un documento",
+      "Cada página de una presentación",
+      "Una animación"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 25,
+    "question": "¿Cuál es una buena práctica en presentaciones?",
+    "options": [
+      "Mucho texto",
+      "Mensajes claros y breves",
+      "Colores muy fuertes"
+    ],
+    "correct_answer": 1
+  }
+]

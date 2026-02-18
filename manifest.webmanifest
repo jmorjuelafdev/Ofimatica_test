@@ -1,0 +1,21 @@
+{
+  "name": "Test institucional de Ofimática",
+  "short_name": "Test Ofimática",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0b1827",
+  "theme_color": "#415a77",
+  "description": "Aplicación para evaluar competencias ofimáticas y administrar resultados.",
+  "icons": [
+    {
+      "src": "src/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "src/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

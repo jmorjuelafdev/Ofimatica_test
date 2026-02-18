@@ -1,0 +1,260 @@
+[
+  {
+    "id": 1,
+    "question": "Registra diariamente llamadas atendidas por asesor. ¿Cuál es la mejor forma de organizar esta información en Excel?",
+    "options": [
+      "Todo en una sola columna",
+      "Cada llamada en una fila y cada dato en una columna",
+      "Una hoja por llamada"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 2,
+    "question": "Necesita saber cuántos clientes fueron atendidos en el día. ¿Qué función básica puede usar?",
+    "options": [
+      "SUMA",
+      "CONTAR o CONTARA",
+      "PROMEDIO"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 3,
+    "question": "Desea ver solo los registros del asesor \"María\" sin borrar los demás. ¿Qué herramienta debe usar?",
+    "image": "src/img/P3_Comercial.jpg",
+    "options": [
+      "Ordenar",
+      "Buscar y reemplazar",
+      "Filtro"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "id": 4,
+    "question": "¿Para qué sirve ordenar datos en Excel?",
+    "options": [
+      "Eliminar información",
+      "Organizar registros para analizarlos mejor",
+      "Proteger la hoja"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 5,
+    "question": "Si una celda muestra \"####\", ¿qué significa normalmente?",
+    "options": [
+      "Error de fórmula",
+      "La columna es muy angosta",
+      "Celda bloqueada"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 6,
+    "question": "¿Qué ventaja tiene usar una tabla en Excel para bases de clientes?",
+    "image": "src/img/P6_Comercial.jpg",
+    "options": [
+      "Cambia los colores automáticamente",
+      "Facilita filtros y ordenamiento",
+      "Bloquea la información"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 7,
+    "question": "Debe redactar una respuesta estándar para clientes. ¿Qué herramienta le ayuda a mantener siempre el mismo formato?",
+    "options": [
+      "Copiar y pegar",
+      "Plantillas o estilos",
+      "Colores de texto"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 8,
+    "question": "¿Cuál es una buena práctica al redactar comunicaciones comerciales?",
+    "options": [
+      "Usar lenguaje informal",
+      "Ser claro, cordial y conciso",
+      "Usar mayúsculas"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 9,
+    "question": "Necesita enviar un documento a un cliente en un formato que no se pueda editar. ¿Qué opción es la más adecuada?",
+    "image": "src/img/P9_Comercial.jpg",
+    "options": [
+      "Guardar como .docx",
+      "Guardar como PDF",
+      "Imprimir pantalla"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 10,
+    "question": "¿Para qué sirve la opción \"Guardar como\"?",
+    "options": [
+      "Imprimir",
+      "Crear una copia con otro nombre o formato",
+      "Compartir por correo"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 11,
+    "question": "¿Qué herramienta permite revisar errores de escritura antes de enviar un documento?",
+    "options": [
+      "Comentarios",
+      "Corrector ortográfico",
+      "Cambiar fuente"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 12,
+    "question": "Debe enviar información a varios clientes sin que vean los correos de los otros destinatarios. ¿Qué campo debe usar?",
+    "image": "src/img/P12_Comercial.jpg",
+    "options": [
+      "Para",
+      "CC",
+      "CCO"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "id": 13,
+    "question": "¿Cuál es la función principal del asunto del correo?",
+    "options": [
+      "Decorar el mensaje",
+      "Indicar claramente el tema",
+      "Adjuntar archivos"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 14,
+    "question": "Antes de enviar una cotización por correo, ¿qué debe verificar?",
+    "image": "src/img/P14_Comercial.jpg",
+    "options": [
+      "El color del texto",
+      "Destinatario y archivo adjunto",
+      "La hora de envío"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 15,
+    "question": "¿Qué buena práctica mejora la atención al cliente por correo?",
+    "options": [
+      "Respuestas largas",
+      "Responder oportunamente y con claridad",
+      "Usar emojis"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 16,
+    "question": "Si recibe un correo de un cliente con una consulta, ¿qué debe hacer primero?",
+    "options": [
+      "Reenviarlo",
+      "Leerlo completo y entender la solicitud",
+      "Responder sin revisar"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 17,
+    "question": "¿Cuándo es correcto reenviar un correo interno?",
+    "options": [
+      "Siempre",
+      "Cuando es relevante para otro área",
+      "Para informar a todos"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 18,
+    "question": "¿Para qué se usa internet en un cargo comercial?",
+    "options": [
+      "Redes sociales personales",
+      "Consultar CRM, información de clientes y servicios",
+      "Descargar archivos sin control"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 19,
+    "question": "¿Qué indica que una página web es segura?",
+    "image": "src/img/P19_Comercial.jpg",
+    "options": [
+      "Muchas imágenes",
+      "Dirección que inicia con https",
+      "Texto grande"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 20,
+    "question": "¿Qué práctica ayuda a proteger datos de clientes?",
+    "options": [
+      "Compartir contraseñas",
+      "No ingresar datos en sitios sospechosos",
+      "Guardar claves en papel"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 21,
+    "question": "¿Qué es un navegador web?",
+    "options": [
+      "Un antivirus",
+      "Un programa para acceder a internet",
+      "Un archivo"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 22,
+    "question": "¿Para qué sirven los marcadores o favoritos del navegador?",
+    "image": "src/img/P22_Comercial.jpg",
+    "imageSize": "sm",
+    "options": [
+      "Eliminar páginas",
+      "Guardar sitios de acceso frecuente",
+      "Bloquear anuncios"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 23,
+    "question": "¿Por qué es importante registrar correctamente la información del cliente?",
+    "options": [
+      "Para llenar campos",
+      "Para dar seguimiento adecuado",
+      "Para ocupar tiempo"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 24,
+    "question": "Si debe agendar una cita correctamente, ¿qué dato no debe faltar?",
+    "options": [
+      "Color favorito del cliente",
+      "Fecha y hora",
+      "Opinión personal"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 25,
+    "question": "¿Qué práctica mejora la gestión de clientes?",
+    "options": [
+      "Registrar datos incompletos",
+      "Mantener información actualizada y ordenada",
+      "Duplicar registros"
+    ],
+    "correct_answer": 1
+  }
+]

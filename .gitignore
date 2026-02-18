@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build output / temp
+dist/
+.cache/
+.parcel-cache/
+.temp/
+
+# Environment files
+.env
+.env.*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS / Windows noise
+.DS_Store
+Thumbs.db
+
+# Generated assets
+favicon.ico
+create-icons.ps1
+generate_icons.py
+create_favicon.py

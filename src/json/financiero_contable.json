@@ -1,0 +1,260 @@
+[
+  {
+    "id": 1,
+    "question": "Debe registrar facturas con número, fecha, proveedor y valor. ¿Cuál es la mejor forma de organizar esta información en Excel?",
+    "options": [
+      "Todo en una sola celda",
+      "Cada factura en una fila y cada dato en una columna",
+      "Una hoja por factura"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 2,
+    "question": "Necesita calcular el total de una columna con valores monetarios. ¿Qué función debe usar?",
+    "options": [
+      "CONTAR",
+      "SUMA",
+      "PROMEDIO"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 3,
+    "question": "Desea conocer el promedio de gastos mensuales. ¿Qué función es la adecuada?",
+    "options": [
+      "SUMA",
+      "PROMEDIO",
+      "MAX"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 4,
+    "question": "Debe copiar una fórmula sin que cambie la referencia a la celda del IVA. ¿Qué tipo de referencia debe usar?",
+    "options": [
+      "Relativa",
+      "Absoluta ($A$1)",
+      "Mixta"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 5,
+    "question": "Quiere ver solo las facturas del proveedor \"XYZ\" sin borrar las demás. ¿Qué herramienta debe usar?",
+    "image": "src/img/P5_Financiero.jpg",
+    "options": [
+      "Ordenar",
+      "Buscar y reemplazar",
+      "Filtro"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "id": 6,
+    "question": "Una celda muestra \"####\" al ingresar un valor. ¿Qué indica normalmente?",
+    "image": "src/img/P6_Financiero.jpg",
+    "options": [
+      "Error de fórmula",
+      "La columna es demasiado angosta",
+      "Celda protegida"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 7,
+    "question": "¿Qué ventaja tiene convertir un rango en Tabla para el control contable?",
+    "image": "src/img/P7_Financiero.jpg",
+    "options": [
+      "Bloquea los datos",
+      "Facilita filtros, totales y ordenamiento",
+      "Cambia la moneda"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 8,
+    "question": "¿Cuál es una buena práctica al trabajar con valores monetarios en Excel?",
+    "options": [
+      "Usar texto",
+      "Aplicar formato de moneda",
+      "Combinar celdas"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 9,
+    "question": "Necesita identificar rápidamente facturas vencidas. ¿Qué herramienta le ayuda más?",
+    "image": "src/img/P9_Financiero.jpg",
+    "options": [
+      "Validación de datos",
+      "Formato condicional",
+      "Congelar paneles"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 10,
+    "question": "¿Para qué sirve ordenar datos por fecha en Excel?",
+    "options": [
+      "Eliminar registros",
+      "Analizar información cronológicamente",
+      "Proteger la hoja"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 11,
+    "question": "¿Qué función devuelve el valor más alto de un rango?",
+    "options": [
+      "MIN",
+      "MAX",
+      "PROMEDIO"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 12,
+    "question": "Antes de cerrar un archivo contable, ¿qué buena práctica debe aplicar?",
+    "options": [
+      "Cambiar colores",
+      "Guardar los cambios correctamente",
+      "Imprimir"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 13,
+    "question": "Debe elaborar un informe contable formal. ¿Qué característica es clave?",
+    "image": "src/img/P13_Financiero.jpg",
+    "options": [
+      "Uso de colores fuertes",
+      "Formato claro y ordenado",
+      "Texto informal"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 14,
+    "question": "¿Qué herramienta permite numerar automáticamente las páginas en un informe?",
+    "options": [
+      "Comentarios",
+      "Número de página",
+      "Referencias"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 15,
+    "question": "¿Para qué se usa el encabezado y pie de página en informes financieros?",
+    "options": [
+      "Decorar el documento",
+      "Incluir datos como fecha y número de página",
+      "Insertar imágenes"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 16,
+    "question": "¿Qué opción permite crear una copia del informe en otro formato?",
+    "options": [
+      "Guardar",
+      "Guardar como",
+      "Cerrar"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 17,
+    "question": "Antes de enviar un informe, ¿qué herramienta ayuda a evitar errores de escritura?",
+    "options": [
+      "Tabla",
+      "Corrector ortográfico",
+      "Color de fuente"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 18,
+    "question": "Debe enviar un informe contable adjunto al área administrativa. ¿Qué debe verificar antes de enviar?",
+    "image": "src/img/P18_Financiero.jpg",
+    "options": [
+      "El fondo del correo",
+      "Archivo adjunto y destinatario correcto",
+      "El tamaño del texto"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 19,
+    "question": "¿Para qué sirve el asunto del correo en un envío contable?",
+    "options": [
+      "Decorar el mensaje",
+      "Indicar claramente el contenido del envío",
+      "Adjuntar archivos"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 20,
+    "question": "Si el informe es confidencial y va a varias personas, ¿qué campo es mejor usar?",
+    "image": "src/img/P20_Financiero.jpg",
+    "options": [
+      "Para",
+      "CC",
+      "CCO"
+    ],
+    "correct_answer": 2
+  },
+  {
+    "id": 21,
+    "question": "¿Qué buena práctica aplica al enviar correos con información financiera?",
+    "options": [
+      "Enviarlos sin revisar",
+      "Lenguaje formal y verificación previa",
+      "Usar emojis"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 22,
+    "question": "¿Qué indica que un portal bancario o contable es seguro?",
+    "image": "src/img/P22_Financiero.jpg",
+    "options": [
+      "Muchos colores",
+      "Dirección que inicia con https",
+      "Texto grande"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 23,
+    "question": "¿Qué práctica ayuda a proteger información financiera?",
+    "options": [
+      "Compartir contraseñas",
+      "No ingresar datos en enlaces sospechosos",
+      "Guardar claves en notas"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 24,
+    "question": "¿Para qué se utiliza internet en un cargo contable?",
+    "options": [
+      "Redes sociales",
+      "Acceder a plataformas financieras y normativas",
+      "Descargar archivos sin control"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 25,
+    "question": "¿Qué es un navegador web?",
+    "options": [
+      "Un antivirus",
+      "Un programa para acceder a internet",
+      "Un archivo"
+    ],
+    "correct_answer": 1
+  }
+]

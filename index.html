@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test institucional de Ofimática</title>
+    <meta name="theme-color" content="#415a77" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+    ></script>
+    <script defer src="quiz.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js').catch((error) => {
+            console.error('SW registration failed', error);
+          });
+        });
+      }
+    </script>
+    <link rel="manifest" href="manifest.webmanifest" />
+  </head>
+  <body data-theme="dark">
+    <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" data-mode="dark">
+      <span class="theme-toggle__icon" aria-hidden="true"></span>
+      <span class="theme-toggle__label">Modo claro</span>
+    </button>
+    <section class="landing" id="landingScreen">
+      <div class="landing-main card">
+        <p class="eyebrow">Test institucional</p>
+        <h1>Evaluación oficial de ofimática</h1>
+        <p class="subtitle">
+          Completa el test de 35 preguntas en un máximo de 45 minutos. Solo se
+          admite un intento por candidato.
+        </p>
+        <ul class="landing-list">
+          <li>Verificaremos tu identidad antes de iniciar.</li>
+          <li>El cronómetro no se detiene una vez en curso.</li>
+          <li>Los resultados solo son visibles para el área administrativa.</li>
+        </ul>
+        <div class="landing-cta">
+          <button id="btnEntrarTest" class="primary">Entrar al test</button>
+          <button id="btnAdmin" class="ghost">Admin</button>
+        </div>
+      </div>
+      <div class="landing-side">
+        <div class="landing-card card">
+          <h4>Indicaciones</h4>
+          <p>Prepárate con un entorno silencioso y una conexión estable.</p>
+          <p>Si el tiempo expira, deberás finalizar inmediatamente.</p>
+        </div>
+        <div class="landing-card card">
+          <h4>Estado del test</h4>
+          <p id="landingStatusText">Esperando al próximo candidato.</p>
+        </div>
+      </div>
+    </section>
+    <div class="app-shell is-hidden" id="appShell">
+      <header class="app-header card">
+        <div class="header-intro">
+          <p class="eyebrow">Test institucional</p>
+          <div class="title-row">
+            <h1>Ofimática aplicada</h1>
+            <div class="header-controls">
+              <div class="timer-pill">
+                <span>Tiempo restante</span>
+                <strong id="timer">45:00</strong>
+              </div>
+              <button id="btnVolverInicio" class="ghost" type="button">
+                Volver al inicio
+              </button>
+            </div>
+          </div>
+          <p class="subtitle">
+            Registra tus datos, selecciona el perfil y completa las 35 preguntas
+            antes de que el reloj llegue a cero.
+          </p>
+        </div>
+        <div class="header-right">
+          <form class="candidate-form" id="candidateForm">
+            <label>
+              <span>Nombre completo</span>
+              <input
+                type="text"
+                id="inputNombre"
+                placeholder="Ej. Ana Torres"
+                required
+              />
+            </label>
+            <label>
+              <span>Documento / ID</span>
+              <input
+                type="text"
+                id="inputDocumento"
+                placeholder="Ej. 1045896321"
+                inputmode="numeric"
+                pattern="\d{5,}"
+                title="Ingresa solo números (mínimo 5 dígitos)"
+                required
+              />
+            </label>
+            <label>
+              <span>Perfil a evaluar</span>
+              <select id="datasetSelect" required>
+                <option value="" disabled selected>Selecciona un perfil</option>
+                <option value="src/json/administrativo_oficina.json">Administrativo / Oficina</option>
+                <option value="src/json/comercial_at_cliente.json">Comercial y Atención al Cliente</option>
+                <option value="src/json/financiero_contable.json">Financiero / Contable</option>
+                <option value="src/json/logistico_operaciones.json">Logístico y Operaciones</option>
+                <option value="src/json/operativo_servicios.json">Operativo y servicios generales</option>
+              </select>
+            </label>
+            <div class="perfil-descripcion" id="perfilDescripcion" aria-live="polite"></div>
+            <button id="btnComenzar" class="primary full-span" type="button">
+              Comenzar test
+            </button>
+          </form>
+        </div>
+      </header>
+
+      <main class="quiz-layout">
+        <section class="question-card card">
+          <div class="status-bar">
+            <span id="questionCount">Pregunta 0 de 0</span>
+            <span id="progressText">0% completado</span>
+          </div>
+          <h2 id="pregunta" class="question-text">
+            Selecciona un perfil y presiona “Comenzar” para ver la primera
+            pregunta.
+          </h2>
+          <ul id="opciones" class="options-list"></ul>
+          <div class="nav-buttons">
+            <button id="btnAnterior" class="ghost" disabled>Anterior</button>
+            <button id="btnSiguiente" class="ghost" disabled>Siguiente</button>
+            <button id="btnFinalizar" class="secondary" disabled>
+              Finalizar test
+            </button>
+          </div>
+        </section>
+
+        <aside class="info-card card">
+          <h3>Seguimiento del test</h3>
+          <p id="panelResumen" class="panel-resumen">
+            Llevas 0 de 35 preguntas respondidas.
+          </p>
+          <div class="question-map">
+            <div class="question-map__header">
+              <h4>Mapa de preguntas</h4>
+              <p>Haz clic en cualquier número para saltar.</p>
+            </div>
+            <div id="mapaPreguntas" class="map-grid"></div>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <div class="modal" id="modalResultado" hidden>
+      <div class="modal-content card">
+        <h2>Resultado del test</h2>
+        <p id="detalleResultado"></p>
+        <ul id="listaResumen" class="lista-resumen"></ul>
+        <div class="modal-actions">
+          <button id="btnCerrarModal" class="primary">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="admin-screen is-hidden" id="adminScreen">
+      <div class="admin-card card">
+        <header class="admin-header">
+          <div>
+            <p class="eyebrow">Panel administrativo</p>
+            <h2>Control de resultados</h2>
+            <p class="subtitle">
+              Consulta los resultados registrados y filtra por documento, perfil o
+              fecha de presentación.
+            </p>
+          </div>
+          <button id="btnSalirAdmin" class="ghost">Volver al inicio</button>
+        </header>
+
+        <div id="adminLoginView" class="admin-login">
+          <h3>Acceso restringido</h3>
+          <p>Ingresa la clave institucional para ingresar al panel.</p>
+          <label>
+            <span>Clave</span>
+            <input type="password" id="adminPassword" placeholder="••••••" />
+          </label>
+          <p class="admin-error" id="adminError" aria-live="polite"></p>
+          <button id="btnIngresarAdmin" class="primary">Ingresar</button>
+        </div>
+
+        <div id="adminResultsView" hidden>
+          <div class="admin-filters">
+            <label>
+              <span>Documento / ID</span>
+              <input
+                type="search"
+                id="adminFilterDocumento"
+                placeholder="Buscar por documento"
+                inputmode="numeric"
+                pattern="\\d*"
+              />
+            </label>
+            <label>
+              <span>Perfil</span>
+              <select id="adminFilterPerfil">
+                <option value="todos">Todos</option>
+                <option value="Administrativo / Oficina">Administrativo / Oficina</option>
+                <option value="Comercial y Atención al Cliente">Comercial y Atención al Cliente</option>
+                <option value="Financiero / Contable">Financiero / Contable</option>
+                <option value="Logístico y Operaciones">Logístico y Operaciones</option>
+                <option value="Operativo y servicios generales">Operativo y servicios generales</option>
+              </select>
+            </label>
+            <label>
+              <span>Fecha del test</span>
+              <input type="date" id="adminFilterFecha" />
+            </label>
+          </div>
+
+          <div class="score-guidelines" aria-live="polite">
+            <h4>Puntaje mínimo por área</h4>
+            <ul>
+              <li><strong>Operativo y servicios generales</strong><span>55–60%</span></li>
+              <li><strong>Logístico y Operaciones</strong><span>60–65%</span></li>
+              <li><strong>Comercial / Call center</strong><span>65–70%</span></li>
+              <li><strong>Administrativo</strong><span>70–75%</span></li>
+              <li><strong>Financiero</strong><span>≥ 75%</span></li>
+            </ul>
+          </div>
+
+          <div class="admin-actions">
+            <button id="btnExportExcel" class="secondary" type="button">
+              Exportar Excel
+            </button>
+            <button id="btnExportPdf" class="primary" type="button">
+              Exportar PDF
+            </button>
+          </div>
+
+          <div class="admin-table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Candidato</th>
+                  <th>Documento</th>
+                  <th>Perfil</th>
+                  <th>Porcentaje</th>
+                  <th>Aciertos</th>
+                  <th>Resultado</th>
+                  <th>Fecha</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="adminTabla"></tbody>
+            </table>
+          </div>
+          <div class="admin-detalle" id="adminDetalle">
+            Selecciona un registro para ver las respuestas.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2026 by jmorjuelafdev — Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

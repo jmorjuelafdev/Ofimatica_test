@@ -1,0 +1,265 @@
+[
+  {
+    "id": 1,
+    "question": "Debe registrar el ingreso de visitantes en una hoja de Excel. ¿Cuál es la mejor forma de organizar la información?",
+    "options": [
+      "Escribir todo en una sola celda",
+      "Usar filas para cada registro y columnas para los datos",
+      "Usar colores sin títulos"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 2,
+    "question": "Necesita agregar un nuevo registro sin borrar los existentes. ¿Qué acción debe realizar?",
+    "image": "src/img/P2_Operativo.jpg",
+    "imageSize": "xs",
+    "options": [
+      "Copiar y pegar sobre la tabla",
+      "Insertar una nueva fila",
+      "Ordenar los datos"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 3,
+    "question": "¿Para qué sirve aplicar bordes a una tabla en Excel?",
+    "image": "src/img/P3_Operativo.jpg",
+    "imageSize": "sm",
+    "options": [
+      "Calcular datos",
+      "Facilitar la lectura de la información",
+      "Proteger el archivo"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 4,
+    "question": "Si un encabezado no se ve al bajar en la hoja, ¿qué opción ayuda?",
+    "image": "src/img/P4_Operativo.jpg",
+    "options": [
+      "Cambiar el color",
+      "Congelar fila superior",
+      "Combinar celdas"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 5,
+    "question": "¿Cuál es el uso principal de Excel en un cargo operativo?",
+    "options": [
+      "Crear presentaciones",
+      "Registrar y organizar información básica",
+      "Editar imágenes"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 6,
+    "question": "Si un dato está mal escrito, ¿qué debe hacer?",
+    "options": [
+      "Eliminar toda la hoja",
+      "Editar solo la celda incorrecta",
+      "Crear un archivo nuevo"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 7,
+    "question": "Debe diligenciar un formato de novedades. ¿Qué herramienta le permite escribir en espacios definidos?",
+    "image": "src/img/P7_Operativo.jpg",
+    "options": [
+      "Cuadro de texto",
+      "Tabla",
+      "WordArt"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 8,
+    "question": "¿Para qué sirve usar negrita en un documento?",
+    "options": [
+      "Decorar el texto",
+      "Resaltar información importante",
+      "Cambiar márgenes"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 9,
+    "question": "Necesita imprimir un reporte correctamente. ¿Qué acción debe revisar antes?",
+    "image": "src/img/P9_Operativo.jpg",
+    "imageSize": "sm",
+    "options": [
+      "El fondo del documento",
+      "La vista previa de impresión",
+      "El color del mouse"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 10,
+    "question": "¿Qué permite guardar un documento en Word?",
+    "options": [
+      "Cerrar el programa",
+      "Conservar la información para uso posterior",
+      "Cambiar el formato"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 11,
+    "question": "Si debe escribir la fecha y el nombre del turno en todos los reportes, ¿dónde es mejor hacerlo?",
+    "image": "src/img/P11_Operativo.jpg",
+    "options": [
+      "En el cuerpo del texto",
+      "En el encabezado o pie de página",
+      "En comentarios"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 12,
+    "question": "¿Qué opción permite corregir errores de escritura?",
+    "options": [
+      "Cambiar fuente",
+      "Corrector ortográfico",
+      "Insertar imagen"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 13,
+    "question": "¿Para qué sirve la opción \"Guardar como\"?",
+    "options": [
+      "Imprimir el archivo",
+      "Crear una copia con otro nombre",
+      "Eliminar el documento"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 14,
+    "question": "¿Cuál es una buena práctica al redactar reportes operativos?",
+    "options": [
+      "Usar párrafos largos",
+      "Lenguaje claro y sencillo",
+      "Usar muchas mayúsculas"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 15,
+    "question": "Debe enviar un reporte al supervisor adjuntando un archivo. ¿Qué debe hacer?",
+    "image": "src/img/P15_Operativo.jpg",
+    "imageSize": "sm",
+    "options": [
+      "Escribir el texto y enviar",
+      "Adjuntar el archivo antes de enviar",
+      "Copiar el archivo en el cuerpo"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 16,
+    "question": "¿Para qué sirve el asunto del correo?",
+    "options": [
+      "Decorar el mensaje",
+      "Indicar el tema del correo",
+      "Adjuntar archivos"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 17,
+    "question": "Si el correo es para una sola persona, ¿qué campo debe usar?",
+    "options": [
+      "CC",
+      "Para",
+      "CCO"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 18,
+    "question": "¿Qué buena práctica aplica al enviar correos laborales?",
+    "options": [
+      "Usar apodos",
+      "Lenguaje respetuoso y claro",
+      "Enviar sin revisar"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 19,
+    "question": "¿Cuándo es correcto reenviar un correo?",
+    "options": [
+      "Siempre",
+      "Cuando la información es relevante para otro destinatario",
+      "Para llenar la bandeja"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 20,
+    "question": "¿Para qué se usa internet en un cargo operativo?",
+    "options": [
+      "Ver redes sociales",
+      "Consultar información o plataformas de trabajo",
+      "Descargar juegos"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 21,
+    "question": "¿Qué indica que una página es segura?",
+    "image": "src/img/P21_Operativo.jpg",
+    "imageSize": "sm",
+    "options": [
+      "Muchas imágenes",
+      "Dirección que inicia con https",
+      "Texto grande"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 22,
+    "question": "¿Qué práctica ayuda a evitar riesgos digitales?",
+    "options": [
+      "Abrir cualquier enlace",
+      "No ingresar datos en páginas desconocidas",
+      "Compartir contraseñas"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 23,
+    "question": "¿Qué es un navegador web?",
+    "options": [
+      "Un documento",
+      "Un programa para acceder a internet",
+      "Un antivirus"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 24,
+    "question": "Durante su turno debe entregar un reporte de novedades claro y entendible para el siguiente turno. ¿Cuál es la mejor práctica al redactarlo?",
+    "options": [
+      "Usar abreviaturas personales",
+      "Escribir información clara, completa y en orden cronológico",
+      "Usar solo mayúsculas para resaltar"
+    ],
+    "correct_answer": 1
+  },
+  {
+    "id": 25,
+    "question": "¿Por qué es importante revisar un reporte antes de entregarlo?",
+    "options": [
+      "Para hacerlo más largo",
+      "Para evitar errores y confusiones",
+      "Para cambiar el formato"
+    ],
+    "correct_answer": 1
+  }
+]
