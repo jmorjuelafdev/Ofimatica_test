@@ -11,7 +11,7 @@ Aplicación web diseñada para evaluar las competencias ofimáticas de candidato
 
 ## Estructura
 
-```
+```text
 Ofimatica_test/
 ├── index.html            # Landing, formulario y panel admin
 ├── styles.css            # Estilos principales
@@ -28,9 +28,11 @@ Ofimatica_test/
 
 1. Instala dependencias (solo se usa `npx serve`, por lo que basta con tener Node.js >= 16).
 2. En la raíz del proyecto ejecuta:
+
    ```bash
    npx serve
    ```
+
 3. Abre la URL que indique la terminal (ej. `http://localhost:3000` o el puerto asignado).
 
 ## Instalación como PWA
@@ -44,12 +46,14 @@ Ofimatica_test/
 ## Flujos principales
 
 ### Evaluación
+
 1. Registrar nombre, documento y perfil.
 2. Cargar el test (25 preguntas por perfil, 50 minutos).
 3. Navegar entre preguntas, revisar mapa y panel resumen.
 4. Finalizar para ver el resultado, interpretación y exportaciones.
 
 ### Panel administrativo
+
 1. Ingresar con la clave definida en `quiz.js` (`ADMIN_PASSWORD`).
 2. Filtrar por documento, perfil o fecha.
 3. Exportar resultados a Excel/PDF y revisar el detalle por candidato.
